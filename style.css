@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Helvetica Neue", "Helvetica";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #141519;
+  background-color: #fff;
+}
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Header */
+.header {
+  background: #ffffff;
+  color: #f1f1f1;
+  width: 100%;
+}
+/* Logo Centering Styles */
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+  padding: 10px;
+}
+
+/* Main Content */
+.content {
+  padding: 16px;
+}
+
+/* Sticky Header */
+.sticky {
+  position: fixed;
+  align-items: center;
+  top: 0;
+  width: 100%;
+}
+
+/* Main1 Container */
+.main1-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #1b12c7;
+  color: #f8eeee;
+  margin-bottom: 40px;
+}
+
+/* Main1 Text Styles */
+.main1-text {
+  flex: 1;
+  padding: 0 16px;
+  font-size: large;
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+/* Image on the Right */
+.image1 {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Password Generator */
+.container {
+  max-width: 700px;
+  margin: 0 auto; /* Add this line to center the container */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-bottom: 200px;
+}
+h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.password-container {
+  margin: 20px 0;
+  padding-right: 20px;
+}
+
+.password-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.copy-button,
+.generate-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.copy-button {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  margin-right: 10px;
+}
+
+.generate-button {
+  background-color: #5cb85c;
+  color: #fff;
+  border: none;
+}
+
+.copy-button:disabled,
+.generate-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.copy-message {
+  display: none;
+  position: absolute;
+  top: 77%;
+  right: 40%;
+  margin-right: 10px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1;
+}
+.copy-message.empty {
+  background-color: red;
+}
+.options {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.option {
+  margin: 5px 0;
+}
+
+label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.option input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.password-strength {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Password Tips */
+.password-tips,
+.weak-password-examples {
+  padding: 20px;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.password-tips h2,
+.weak-password-examples h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.password-tips ul,
+.weak-password-examples ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .main1-container {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main1-text {
+    padding: 16px 0;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .image1 {
+    max-width: 100%;
+  }
+
+  .container {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main1-container {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .password-field {
+    font-size: 16px;
+  }
+}
