@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator | Create Strong Password</title>
+    <link rel="shortcut icon" href="asset/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" /> 
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="myHeader">
+      <div class="logo-container">
+        <img src="asset/logo.png" alt="" class="logo" />
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div id="main1" class="main1-container">
+      <div class="main1-text">
+        <h1>Password Generator</h1>
+        <p>
+          One of the biggest security risks to your digital life is a weak<br />
+          password for online accounts. A strong password should be a <br />
+          complex password - the one that includes at least 12 characters<br />
+          (though we think you should use even more!), uses letters and<br />
+          numbers, symbols and special characters, and most importantly <br />
+          -is a unique password.
+        </p>
+        <p>
+          Use our safe password generator below to create a strong,<br />
+          random password anytime you need it.
+        </p>
+      </div>
+      <img
+        class="image1"
+        src="asset/password-generator-3.png"
+        alt="Blue outlined icon of a computer screen with a password field on it and a checkmark in the upper right corner."
+        height="400"
+        width="600"
+      />
+    </div>
+
+    <!-- Password Generator Container -->
+    <div class="container">
+      <h2>Password Generator</h2>
+      <div class="password-container">
+        <input type="text" id="password" class="password-field" readonly />
+        <button id="copy" class="copy-button">Copy</button>
+        <button id="generate" class="generate-button">Generate</button>
+      </div>
+      <div class="options">
+        <label for="passwordLength"
+          >Password Length: <span id="length">12</span></label
+        >
+        <input type="range" id="passwordLength" min="4" max="64" value="12" />
+        <div class="option">
+          <input type="checkbox" id="includeNumbers" checked />
+          <label for="includeNumbers">Include Numbers</label>
+        </div>
+        <div class="option">
+          <input type="checkbox" id="includeSymbols" checked />
+          <label for="includeSymbols">Include Symbols</label>
+        </div>
+        <div class="option">
+          <input type="checkbox" id="includeLowercaseLetters" checked />
+          <label for="includeLowercaseLetters">Include Lowercase Letters</label>
+        </div>
+        <div class="option">
+          <input type="checkbox" id="includeUppercaseLetters" checked />
+          <label for="includeUppercaseLetters">Include Uppercase Letters</label>
+        </div>
+      </div>
+      <p class="password-strength" id="passwordStrength"></p>
+    </div>
+    <div class="copy-message">
+      Copied to clipboard successfully!
+    </div>
+    
+    <!-- Password Tips  -->
+    <div class="password-tips">
+        <h2>WHAT MAKES A STRONG PASSWORD:</h2>
+        <ul>
+          <li>It includes a mix of special characters, numbers, and symbols to have a combination that is not easy to guess.</li>
+          <li>It has at least 12 characters (but preferably even longer) and includes letters and numbers, in addition to the special characters and symbols. We recommend 64 characters as it allows the use of passphrases - a sequence of words.</li>
+          <li>It is unique and not re-used across multiple online accounts.</li>
+          <li>It is regularly updated - make sure to refresh your passwords at least once every few months.</li>
+          <li>It is not stored physically - nothing is more vulnerable than a Post-It note on your monitor.</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="weak-password-examples">
+      <h2>WEAK PASSWORD EXAMPLES:</h2>
+      <ul>
+        <p> <li>1234567</li>
+        Consecutive numbers aren't unique to you and don't use a variety of characters and symbols.</p>
+        <p> <li>JaneDoe (Your name)</li>
+        This information about you is easily available and doesn't use a variety of characters and symbols.</p>
+        <p> <li>JaneDoeJr (Your child's name)</li>
+        This information about you is easily available and doesn't use a variety of characters and symbols.</p>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+    <script src="genrator.js"></script>
+  </body>
+</html>
